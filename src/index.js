@@ -1,19 +1,13 @@
 /*  Fonts
 \*-------------------------------------------------------*/
-import avertaRegular  from './fonts/Averta.woff'
-import avertaBlack    from './fonts/Averta_Black.woff'
+import helvetica  from './fonts/Helvetica.woff'
 
 
 
 /*  Images
 \*-------------------------------------------------------*/
 import favicon from './images/favicon.png'
-import isotipo from './images/isotipo.svg';
-
-import iconWebpack from './images/webpack.svg'
-import iconPug from './images/pug.svg'
-import iconSass from './images/sass.svg'
-import iconBabel from './images/babel.svg'
+import logotipo from './images/logotipo.svg';
 
 
 
