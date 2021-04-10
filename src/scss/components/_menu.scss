@@ -1,0 +1,132 @@
+/* ********** Header Menu ********** */
+.header {
+  background-color: var(--primary-color);
+  height: auto;
+  width: 100vw;
+  position: fixed;
+  z-index: var(--z-index-middle);
+
+  // .header__container
+  &__container {
+    width: 90%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+
+/* ********** Logo Menu ********** */
+.logo {
+  // .logo__link
+  &__link { display: block; }
+
+  // .logo__image
+  &__image { width: 18rem; }
+}
+
+/* ********** Hamburger Menu ********** */
+.hamburger {
+  position: relative;
+  background-color: var(--tertiary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+
+  @include mq(m) { display: none; }
+
+  // .hamburger__body
+  &__body {
+    width: 25px;
+    height: 2px;
+    background: var(--quinary-color);
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+
+    &::before, &::after {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 2px;
+      background: var(--quinary-color);
+      border-radius: 3px;
+      transition: all .3s ease-in-out;
+    }
+
+    &::before { transform: translateY(-8px); }
+
+    &::after { transform: translateY(8px); }
+  }
+
+  &.open &__body {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+
+    &::before { transform: rotate(45deg) translate(35px, -35px); }
+
+    &::after { transform: rotate(-45deg) translate(35px, 35px); }
+  }
+}
+
+
+/* ********** Navigation Menu ********** */
+.nav {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  top: -100%;
+  left: 0;
+  background-color: var(--primary-color);
+  transition: top .4s;
+  z-index: -1;
+
+  @include mq(m) {
+    position: static;
+    background: transparent;
+    z-index: 0;
+  }
+
+  // nav.show
+  &.show { top: 8rem; }
+}
+
+
+/* ********** Menu ********** */
+.menu {
+  @include mq(m) {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  // .menu__link
+  &__link {
+    display: block;
+    padding: 2rem;
+    color: var(--text-color-white);
+    font-family: var(--primary-font);
+    font-size: 1.8rem;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--tertiary-color);
+      transition: 0.5s;
+    }
+
+    @include mq(m) { padding: 0; margin-right: 3rem; }
+
+    // .menu__link--active
+    &--active {
+      color: var(--tertiary-color);
+      font-weight: bold;
+    }
+  }
+}

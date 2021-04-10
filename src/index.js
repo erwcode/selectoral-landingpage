@@ -7,7 +7,7 @@ import helvetica  from './fonts/Helvetica.woff'
 /*  Images
 \*-------------------------------------------------------*/
 import favicon from './images/favicon.png'
-import logotipo from './images/logotipo.svg';
+import logotipo from './images/selectoral-logo.svg';
 
 
 
@@ -19,3 +19,7 @@ import scss from './scss/main.scss'
 
 /*  JavaScript
 \*-------------------------------------------------------*/
+import { activeMenu, activeMenuLink } from './js/menu'
+
+activeMenu('hamburger','menu')
+activeMenuLink()
