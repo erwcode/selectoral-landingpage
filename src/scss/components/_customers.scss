@@ -1,0 +1,24 @@
+/* ********** Customers ********** */
+.customers {
+  padding: 5rem 0;
+
+  // .customers__container
+  &__container {
+    width: 90%;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // .customers__logo
+  &__logo {
+    margin: 2rem 0;
+    width: 50%;
+    flex-basis: 50%;
+
+    @include mq(m) { flex-basis: 25%; width: 25%; }
+  }
+}
+

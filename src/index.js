@@ -29,6 +29,13 @@ import iconSoporte from './images/icon-soporte.svg'
 import vectorTop from './images/estructura-top.png'
 import vectorLeft from './images/estructura-left.png'
 
+import logoMovimiento from './images/logo-movimiento.svg'
+import logoPan from './images/logo-pan.svg'
+import logoMorena from './images/logo-morena.svg'
+import logoVerde from './images/logo-verde.svg'
+
+
+
 /*  CSS
 \*-------------------------------------------------------*/
 import scss from './scss/main.scss'
