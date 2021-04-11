@@ -1,0 +1,33 @@
+/* ********** Software ********** */
+.software {
+  padding: 8rem 0;
+  background: url('/assets/images/estructura-left.png') no-repeat;
+  background-position: 0 10%;
+  background-size: 30%;
+
+  @include mq(m) { background-position-y: 5%; }
+  @include mq(l) { background-size: 20%; }
+
+  // .software__container
+  &__container {
+    width: 90%;
+    text-align: center;
+  }
+
+  // .software__link
+  &__link {
+    display: block;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--text-color-white);
+    border-radius: 5rem;
+    font-size: 2rem;
+    width: 60%;
+    margin: 4rem auto;
+    cursor: pointer;
+
+    &:hover { background-color: var(--primary-color); }
+
+    @include mq(m) { width: 20rem; }
+  }
+}

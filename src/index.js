@@ -12,6 +12,7 @@ import logotipo from './images/selectoral-logo.svg';
 import screenDashboardS from './images/selectoral-dashboard@1x.png'
 import screenDashboardM from './images/selectoral-dashboard.png'
 import screenLogin from './images/selectoral-login.png'
+import screenRegistros from  './images/selectoral-registros.png'
 
 import iconArrow from './images/icon-arrow.svg'
 import iconCaptura from './images/icon-captura.svg'
@@ -22,6 +23,7 @@ import iconEstructura from './images/icon-estructura.svg'
 import iconReportes from './images/icon-reportes.svg'
 
 import vectorTop from './images/estructura-top.png'
+import vectorLeft from './images/estructura-left.png'
 
 /*  CSS
 \*-------------------------------------------------------*/
