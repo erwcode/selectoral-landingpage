@@ -4,6 +4,8 @@
   background-color: var(--primary-color);
   color: var(--text-color-white);
 
+  @include mq(m) { padding-bottom: 10rem; }
+
   // .features--ecosystem
   &--ecosystem {
     clip-path: polygon(50% 3%, 100% 0, 100% 100%, 0 100%, 0 0);
@@ -11,6 +13,14 @@
 
     @include mq(m) { clip-path: polygon(50% 6%, 100% 0, 100% 100%, 0 100%, 0 0); }
     @include mq(l) { clip-path: polygon(50% 9%, 100% 0, 100% 100%, 0 100%, 0 0); padding-top: 20rem; }
+  }
+
+  // .features--security
+  &--security {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+    padding: 10rem 0 12rem;
+
+    @include mq(m) { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%); }
   }
 
   // .features__container
@@ -25,6 +35,14 @@
       grid-template-areas: "screen section" "screen features";
       justify-content: center;
       align-items: start;
+
+      // .features__container--security
+      &--security {
+        grid-template-columns: 1fr 40%;
+        grid-template-areas: "section screen" "features screen";
+
+        .features__item:nth-child(2) { text-align: right; }
+      }
     }
   }
 
@@ -43,6 +61,7 @@
     margin-top: 2rem;
     font-size: 1.8rem;
 
+    @include mq(m) { margin-top: 3rem; }
     @include mq(l) { width: 80%; }
   }
 
