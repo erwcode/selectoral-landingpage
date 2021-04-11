@@ -1,0 +1,121 @@
+/* ********** Hero ********** */
+.hero {
+  position: relative;
+  padding: 8rem 0 10rem;
+  height: 100%;
+  background-color: var(--primary-color);
+  color: var(--text-color-white);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+
+  @include mq(m) { clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%); }
+  @include mq(l) {
+    padding-bottom: 30rem;
+    clip-path: none;
+    background: linear-gradient(to top left,transparent 49.8%, var(--primary-color) 50%) bottom/100% 30%,
+                linear-gradient(var(--primary-color),var(--primary-color)) top/100% 70%;
+    background-repeat: no-repeat;
+  }
+
+
+  // .hero__container
+  &__container {
+    width: 90%;
+    text-align: center;
+
+    @include mq(m) {
+      text-align: left;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  // .hero__title
+  &__title {
+    font-size: 4rem;
+    line-height: 5rem;
+    margin-top: 10%;
+
+    @include mq(m) { font-size: 3.8rem; }
+    @include mq(l) { font-size: 5.8rem; line-height: 7rem; margin-top: 20%; }
+  }
+
+  // .hero__description
+  &__description {
+    margin-top: 4rem;
+    font-size: 2rem;
+
+    @include mq(m) { margin-top: 3rem; font-size: 1.8rem; }
+    @include mq(l) { font-size: 2rem; }
+  }
+
+  // .hero__wrapper
+  &__wrapper {
+    margin: 4rem 0;
+
+    @include mq(m) { margin-bottom: 0; }
+
+    @include mq(l) {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+
+  // .hero__link
+  &__link {
+    color: var(--text-color-white);
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    text-align: center;
+
+    @include mq(m) { font-size: 1.8rem; }
+
+    // .hero__link--demo
+    &--demo {
+      background-color: var(--tertiary-color);
+      padding: 1rem;
+      border-radius: 5rem;
+      width: 60%;
+      margin: auto;
+
+      &:hover { background-color: var(--secondary-color); }
+
+      @include mq(m) { margin-left: 0; width: 18rem; }
+      @include mq(l) { margin: 0; }
+    }
+
+    // .hero__link--sale
+    &--sale {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      transition: all .5s;
+
+      &:hover {
+        font-style: italic;
+        transform: translateX(1rem);
+      }
+
+      @include mq(m) { margin-top: 3rem; }
+      @include mq(l) { margin: 0 0 0 4rem; }
+    }
+  }
+
+  // .hero__icon
+  &__icon { margin-left: .5rem; }
+
+  // .hero__picture
+  &__picture {
+    @include mq(m) {
+      position: absolute;
+      top: 8rem;
+      right: 0;
+      width: 50%;
+      z-index: 2;
+    }
+  }
+}

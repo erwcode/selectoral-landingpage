@@ -9,6 +9,10 @@ import helvetica  from './fonts/Helvetica.woff'
 import favicon from './images/favicon.png'
 import logotipo from './images/selectoral-logo.svg';
 
+import screenDashboardS from './images/selectoral-dashboard@1x.png'
+import screenDashboardM from './images/selectoral-dashboard.png'
+
+import iconArrow from './images/icon-arrow.svg'
 
 
 /*  CSS
