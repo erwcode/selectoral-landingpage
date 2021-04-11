@@ -1,0 +1,96 @@
+/* ********** Features ********** */
+.features {
+  padding: 5rem 0;
+  background-color: var(--primary-color);
+  color: var(--text-color-white);
+
+  // .features--ecosystem
+  &--ecosystem {
+    clip-path: polygon(50% 3%, 100% 0, 100% 100%, 0 100%, 0 0);
+    padding-top: 10rem;
+
+    @include mq(m) { clip-path: polygon(50% 6%, 100% 0, 100% 100%, 0 100%, 0 0); }
+    @include mq(l) { clip-path: polygon(50% 9%, 100% 0, 100% 100%, 0 100%, 0 0); padding-top: 20rem; }
+  }
+
+  // .features__container
+  &__container {
+    width: 90%;
+    text-align: center;
+
+    @include mq(m) {
+      text-align: left;
+      display: grid;
+      grid-template-columns: 40% 1fr;
+      grid-template-areas: "screen section" "screen features";
+      justify-content: center;
+      align-items: start;
+    }
+  }
+
+  // .features__item
+  &__item {
+    &:nth-child(2) { margin: 3rem 0; }
+
+    @include mq(m) {
+      &:first-child { grid-area: section; }
+      &:nth-child(2) { grid-area: screen; margin: 0; }
+      &:last-child { grid-area: features; margin-top: 4rem; }
+    }
+  }
+  // .features__description
+  &__description {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+
+    @include mq(l) { width: 80%; }
+  }
+
+  // .features__image
+  &__image { width: 80%; }
+
+  // .features__artitle
+  &__artitle {
+    margin-bottom: 4rem;
+
+    &:last-child { margin-bottom: 0; }
+
+    @include mq(m) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    @include mq(l) { width: 85%; }
+  }
+
+  // .features__icon
+  &__icon {
+    width: 15%;
+    margin-bottom: 2rem;
+
+    @include mq(m) { width: 10%; height: 10%; }
+    @include mq(l) { width: 5rem; }
+  }
+
+  // .features__wrapper
+  &__wrapper {
+    background-color: var(--secondary-color);
+    border-radius: .5rem;
+    padding: 3rem 2rem;
+
+    @include mq(m) { width: 85%; padding: 1.5rem; }
+  }
+
+  // .features__name
+  &__name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+
+    @include mq(m) { font-size: 2rem; }
+  }
+
+  // .features__brief
+  &__brief { font-size: 1.8rem; }
+}
