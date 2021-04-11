@@ -13,7 +13,11 @@ import screenDashboardS from './images/selectoral-dashboard@1x.png'
 import screenDashboardM from './images/selectoral-dashboard.png'
 
 import iconArrow from './images/icon-arrow.svg'
+import iconCaptura from './images/icon-captura.svg'
+import iconAnaliza from './images/icon-analiza.svg'
+import iconPlanifica from './images/icon-planifica.svg'
 
+import vectorTop from './images/estructura-top.png'
 
 /*  CSS
 \*-------------------------------------------------------*/
