@@ -43,6 +43,7 @@ import openGraphSelectoral from './images/selectoral.jpg'
 /*  CSS
 \*-------------------------------------------------------*/
 import scss from './scss/main.scss'
+import 'aos/dist/aos.css'
 
 
 
@@ -51,8 +52,16 @@ import scss from './scss/main.scss'
 import { activeMenu, activeMenuLink } from './js/menu'
 import { emailSystem } from './js/email';
 import { showCurrentDate } from './js/date';
+import AOS from 'aos'
 
 activeMenu('hamburger','menu')
 activeMenuLink()
 emailSystem()
 showCurrentDate()
+
+AOS.init({
+  offset: 100, // offset (in px) from the original trigger point
+  duration: 1000, // values from 0 to 3000, with step 50ms
+  easing: 'ease-out-back', // default easing for AOS animations
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+});
