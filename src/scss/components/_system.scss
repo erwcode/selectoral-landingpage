@@ -1,0 +1,23 @@
+/* ********** System ********** */
+.system {
+  padding: 8rem 0 5rem;
+  background: var(--primary-color) url('/assets/images/estructura-right.png') no-repeat;
+  background-position: 100% 10%;
+  background-size: 40%;
+  clip-path: polygon(50% 6%, 100% 0, 100% 100%, 0 100%, 0 0);
+  color: var(--text-color-white);
+
+  @include mq(m) {
+    padding-top: 10rem;
+    clip-path: polygon(50% 9%, 100% 0, 100% 100%, 0 100%, 0 0);
+    background-size: 30%;
+  }
+
+  @include mq(l) { background-position-y: 70%; background-size: 25%; }
+
+  // .system__container
+  &__container {
+    width: 90%;
+    text-align: center;
+  }
+}

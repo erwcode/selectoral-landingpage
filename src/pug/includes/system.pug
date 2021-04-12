@@ -1,0 +1,13 @@
+section.system#sistema
+  .system__container.l-container
+    h2.overview__title Acceso al Sistema
+    p.overview__description Descubre más funcionalidades directamente en nuestro Sistema Demo de Gestión Electoral
+    form(class="form", id="systemForm")
+      .form__container
+        .form__item
+          input(class="form__input", type="text", name="userName", placeholder="Nombre(s*)", required)
+        .form__item
+          input(class="form__input", type="text", name="userLastName", placeholder="Apellidos*", required)
+        .form__item
+          input(class="form__input", type="email", name="userEmail", placeholder="Correo Electrónico", required)
+          input(class="form__input form__button", type="submit", value="Solicitar")

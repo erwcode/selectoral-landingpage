@@ -28,6 +28,7 @@ import iconSoporte from './images/icon-soporte.svg'
 
 import vectorTop from './images/estructura-top.png'
 import vectorLeft from './images/estructura-left.png'
+import vectorRight from './images/estructura-right.png'
 
 import logoMovimiento from './images/logo-movimiento.svg'
 import logoPan from './images/logo-pan.svg'
@@ -45,6 +46,8 @@ import scss from './scss/main.scss'
 /*  JavaScript
 \*-------------------------------------------------------*/
 import { activeMenu, activeMenuLink } from './js/menu'
+import { emailSystem } from './js/email';
 
 activeMenu('hamburger','menu')
 activeMenuLink()
+emailSystem()
