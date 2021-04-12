@@ -8,6 +8,7 @@ import helvetica  from './fonts/Helvetica.woff'
 \*-------------------------------------------------------*/
 import favicon from './images/favicon.png'
 import logotipo from './images/selectoral-logo.svg';
+import logoErwCode from './images/erwcode-logo.svg';
 
 import screenDashboardS from './images/selectoral-dashboard@1x.png'
 import screenDashboardM from './images/selectoral-dashboard.png'
@@ -47,7 +48,9 @@ import scss from './scss/main.scss'
 \*-------------------------------------------------------*/
 import { activeMenu, activeMenuLink } from './js/menu'
 import { emailSystem } from './js/email';
+import { showCurrentDate } from './js/date';
 
 activeMenu('hamburger','menu')
 activeMenuLink()
 emailSystem()
+showCurrentDate()
