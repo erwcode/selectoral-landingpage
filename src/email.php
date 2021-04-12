@@ -5,20 +5,20 @@
 
   $cabeceras = 'MIME-Version: 1.0' . "\r\n";
   $cabeceras .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-  $cabeceras .= 'From: '.$_POST["contactEmail"];
+  $cabeceras .= 'From: '.$_POST["userEmail"];
 
 
   $mensaje =
       '<html>'.
           '<head>
-              <title>Formulario del Sistema</title>
+              <title>Formulario de Acceso al Sistema</title>
           </head>'.
           '<body>
-            <p>Hola, soy un nuevo lead.</p>
-            <p>Mi nombre es <strong>'.$_POST["userName"]. .$_POST["userLastName"].'</strong></p>'.
-            '<p>A continuación les proporciono mis datos de contacto:</p>'.
-            '<p>Email: <strong>'.$_POST["userEmail"].'</strong></p>'.
-            '<p>¡Estoy interesado en el Sistema de Gestión Electoral!</p>'.
+            <p>👋 ¡Hola!</p>
+            <p>Mi nombre es <strong>'.$_POST["userName"].'</strong> <strong>'.$_POST["userLastName"].'</strong>.</p>'.
+            '<p>¡Estoy interesado/a en el Sistema de Gestión Electoral!</p>'.
+            '<p>📧 Email: <strong>'.$_POST["userEmail"].'</strong></p>'.
+            '<p>Quedo en espera de su información, gracias.</p>'.
         '</body>'.
       '</html>';
 
