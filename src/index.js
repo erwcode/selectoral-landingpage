@@ -36,6 +36,8 @@ import logoPan from './images/logo-pan.svg'
 import logoMorena from './images/logo-morena.svg'
 import logoVerde from './images/logo-verde.svg'
 
+import openGraphSelectoral from './images/selectoral.jpg'
+
 
 
 /*  CSS
