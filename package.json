@@ -1,7 +1,7 @@
 {
-  "name": "webpack-starter-kit",
-  "version": "2.0.0",
-  "description": "A starter kit workflow using Webpack, PUG, SCSS, SMACSS-ITCSS, BEM, PostCSS & Babel.",
+  "name": "selectoral-landingpage",
+  "version": "1.0.0",
+  "description": "Selectoral.com is a profit software to help electoral campaigns.",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/erwcode/webpack-starter-kit.git"
+    "url": "git+https://github.com/erwcode/selectoral-landingpage.git"
   },
   "author": "ErwCode Technologies <contacto@erwcode.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/erwcode/webpack-starter-kit/issues"
+    "url": "https://github.com/erwcode/selectoral-landingpage/issues"
   },
-  "homepage": "https://github.com/erwcode/webpack-starter-kit#readme",
+  "homepage": "https://github.com/erwcode/selectoral-landingpage#readme",
   "devDependencies": {
     "@babel/core": "^7.12.13",
     "@babel/plugin-transform-spread": "^7.12.13",
