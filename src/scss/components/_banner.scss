@@ -1,0 +1,42 @@
+/* ********** Banner ********** */
+.banner {
+  padding: 10rem 0;
+  height: 100%;
+  background-color: var(--primary-color);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+
+  @include mq(m) {
+    height: 30vh;
+    background: var(--primary-color) url('/assets/images/estructura-right.png') no-repeat;
+    background-position: 100% 80%;
+    background-size: 25%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  }
+
+  @include mq(l) {
+    padding-top: 15rem;
+    height: 40rem;
+    background-size: 20%;
+  }
+
+  // .banner__container
+  &__container {
+    width: 90%;
+    color: var(--text-color-white);
+  }
+
+  // .banner__title
+  &__title {
+    font-size: 3.5rem;
+    line-height: 4rem;
+    margin-bottom: 2rem;
+
+    @include mq(m) { font-size: 4rem; margin-bottom: 4rem; }
+    @include mq(l) { font-size: 5rem; }
+  }
+
+  // .banner__update
+  &__update {
+    font-size: 1.7rem;
+  }
+}
