@@ -69,6 +69,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/pug/pages/index.pug'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/pug/pages/privacy.pug',
+      filename: 'politica-de-privacidad.html'
+    }),
     new MiniCssExtractPlugin({
       filename: './assets/css/main.css'
     }),
