@@ -77,6 +77,10 @@ module.exports = {
       template: './src/pug/pages/terms.pug',
       filename: 'terminos-y-condiciones.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/pug/pages/thanks.pug',
+      filename: 'gracias.html'
+    }),
     new MiniCssExtractPlugin({
       filename: './assets/css/main.css'
     }),
