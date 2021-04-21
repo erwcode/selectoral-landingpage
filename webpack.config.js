@@ -73,6 +73,10 @@ module.exports = {
       template: './src/pug/pages/privacy.pug',
       filename: 'aviso-de-privacidad.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/pug/pages/terms.pug',
+      filename: 'terminos-y-condiciones.html'
+    }),
     new MiniCssExtractPlugin({
       filename: './assets/css/main.css'
     }),
