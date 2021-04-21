@@ -1,0 +1,96 @@
+/* ********** Thanks ********** */
+.thanks {
+  position: relative;
+  padding: 8rem 0;
+  height: 100%;
+  background: var(--primary-color) url('/assets/images/estructura-left.png') no-repeat;
+  background-position: 0% 15%;
+  background-size: 25%;
+
+  @include mq(m) { background-position-y: 12%; background-size: 20%; }
+  @include mq(l) { padding-bottom: 25rem; background-position-y: 17%; background-size: 10% }
+
+  // .thanks__container
+  &__container {
+    width: 90%;
+    color: var(--text-color-white);
+    text-align: center;
+
+    @include mq(l) {
+      text-align: left;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  // .thanks__title
+  &__title {
+    font-size: 4rem;
+    line-height: 5rem;
+    margin-top: 10%;
+
+    @include mq(m) { font-size: 3.8rem; }
+    @include mq(l) { font-size: 5.8rem; line-height: 7rem; margin-top: 20%; }
+  }
+
+  // .hero__description
+  &__description {
+    margin-top: 4rem;
+    font-size: 2rem;
+
+    @include mq(m) { margin-top: 3rem; font-size: 1.8rem; }
+    @include mq(l) { font-size: 2rem; }
+  }
+
+  // .hero__wrapper
+  &__wrapper {
+    margin: 4rem 0;
+
+    @include mq(m) { margin-top: 6rem; }
+
+    @include mq(l) {
+      margin-bottom: 0;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+
+  // .hero__link
+  &__link {
+    color: var(--text-color-white);
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    text-align: center;
+
+    @include mq(m) { font-size: 1.8rem; }
+
+    // .hero__link--demo
+    &--demo {
+      background-color: var(--tertiary-color);
+      padding: 1rem;
+      border-radius: 5rem;
+      width: 60%;
+      margin: auto;
+
+      &:hover { background-color: var(--secondary-color); }
+
+      @include mq(m) { width: 20rem; }
+      @include mq(l) { margin: 0; }
+    }
+  }
+
+  // .hero__picture
+  &__picture {
+    @include mq(l) {
+      position: absolute;
+      top: 8rem;
+      right: 0;
+      width: 50%;
+      z-index: 2;
+    }
+  }
+}

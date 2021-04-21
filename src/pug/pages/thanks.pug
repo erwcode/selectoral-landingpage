@@ -6,3 +6,14 @@ append variables
   - ogImage         = 'https://selectoral.com/assets/images/selectoral.jpg'
 
 block body
+  //- Section Hero
+  section.thanks
+    .thanks__container.l-container
+      .thanks__content
+        h1.thanks__title Gracias por tu interés
+        p.thanks__description Hemos recibido tu solicitud para acceder al sistema demo, en un momento te estaremos enviando a tu correo electrónico las claves de acceso.
+        .thanks__wrapper
+          a(class="thanks__link thanks__link--demo", href="https://selectoral.com/demo/") Ir al sistema demo
+      picture.thanks__picture
+        source(srcset="/assets/images/selectoral-demo.png", media="(min-width: 1024px)", type="image/png")
+        img(class="hero__image", src="/assets/images/selectoral-demo@1x.png", alt="Demo Sistema de Gestión Electoral")

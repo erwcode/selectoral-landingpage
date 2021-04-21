@@ -15,6 +15,8 @@ import screenDashboardM from './images/selectoral-dashboard.png'
 import screenLogin from './images/selectoral-login.png'
 import screenRegistros from  './images/selectoral-registros.png'
 import screenEstadistica from './images/selectoral-estadistica.png'
+import screenDemoS from './images/selectoral-demo@1x.png'
+import screenDemoM from './images/selectoral-demo.png'
 
 import iconArrow from './images/icon-arrow.svg'
 import iconCaptura from './images/icon-captura.svg'
