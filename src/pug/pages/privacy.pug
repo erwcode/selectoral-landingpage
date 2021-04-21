@@ -1,10 +1,50 @@
 extends ../template.pug
 append variables
-  - pageTitle       = 'Política de Privacidad'
-  - metaDescription = 'Selectoral.com pone a tu disposición la siguiente Política de Privacidad para el uso de este sitio web.'
-  - ogUrl           = 'https://selectoral.com/politica-de-privacidad.html'
+  - pageTitle       = 'Aviso de Privacidad'
+  - metaDescription = 'Selectoral.com pone a tu disposición la siguiente Aviso de Privacidad para el uso de este sitio web.'
+  - ogUrl           = 'https://selectoral.com/aviso-de-privacidad.html'
   - ogImage         = 'https://selectoral.com/assets/images/selectoral.jpg'
 
 block body
   //- Banner Section
   include ../includes/banner.pug
+
+  //- Privacy Section
+  main.legal
+    .legal__container.l-container
+      .legal__section
+        p.legal__text Esta política (“Aviso de Privacidad”, junto con nuestros Términos y Condiciones) explica y establece la base de por qué y cuándo recolectamos información personal de las personas que visitan nuestro sitio web, cómo la utilizamos, las condiciones bajo las cuales podemos divulgalo a otros y las medidas que tomamos para manejarlo.
+        p.legal__text Al visitar este sitio web, acepta y consiente las prácticas descritas en esta Política. Tenga en cuenta que esto incluye el consentimiento para la recopilación y el procesamiento de cualquier información personal que proporcione, como se describe a continuación. Es posible que modifiquemos esta Política de vez en cuando, así que revísela de vez en cuando para asegurarse de que está de acuerdo con los cambios.
+      section.legal__section
+        h2.legal__title Procesamiento de datos en relación con los sitios
+        p.legal__text Cuando visita nuestro sitio web, el proveedor de alojamiento de nuestro sitio web, recopila información sobre su dirección IP, información sobre su visita, su actividad de navegación y cómo utiliza nuestro sitio web. Esta información puede combinarse con otra información que proporcione.
+        p.legal__text La recopilación y el procesamiento de estos datos técnicos tiene como fin permitir el uso de nuestro sitio web, garantizar continuamente la seguridad y estabilidad del sistema, optimizar nuestro sitio web y para fines estadísticos internos.
+        p.legal__text Podemos recibir información sobre usted si utiliza otros sitios web que operamos nosotros o nuestros socios. También trabajamos con terceros (isocios de proyectos, proveedores de servicios, proveedores de análisis) y podemos recibir información sobre usted de ellos. Esto puede combinarse con otra información que nos proporcione.
+      section.legal__section
+        h2.legal__title Cómo su información es utilizada
+        p.legal__text Nosotros podremos utilizar su información para los siguientes propósitos
+        ul.legal__bullets
+          li.legal__point para proporcionarle información y noticias relevantes.
+          li.legal__point para enviarle comunicados personalizados que haya solicitado y que puedan ser de su interés, que pueden estar basadas en su actividad en nuestro (s) sitio (s) web o en el sitio web de nuestros socios. Estos pueden incluir información sobre campañas, actividades y eventos.
+          li.legal__point para comprender y medir la eficacia de cómo le servimos a usted y a los demás. para hacerle sugerencias y recomendaciones sobre servicios que puedan interesarle, que pueden basarse en su actividad en nuestro (s) sitio (s) web o en el sitio web de nuestros socios.
+          li.legal__point para análisis y elaboración de perfiles para crear informes de tendencias agregados, averigüe cómo llegan los visitantes a nuestro sitio web; qué sitios y páginas se visualizan, las respuestas a las campañas de marketing y para determinar los canales y mensajes de marketing más eficaces.
+          li.legal__point solicitar sus opiniones o comentarios sobre el servicio que brindamos.
+          li.legal__point notificarle sobre los cambios que realicemos en nuestra Aviso de Privacidad o términos y condiciones.
+        p.legal__text Revisamos nuestros períodos de retención de información personal de forma regular. Conservaremos su información personal en nuestros sistemas durante el tiempo que sea necesario para la actividad correspondiente.
+      section.legal__section
+        h2.legal__title Uso de Cookies
+        p.legal__text Nuestro sitio web utiliza cookies para distinguirlo de otros visitantes en nuestro sitio. Las cookies son pequeños archivos de texto que pueden almacenarse en su computadora (u otros dispositivos habilitados para Internet, como un teléfono inteligente o tableta). Un servidor las envía a su computadora y se almacenan en su disco duro para permitir que un sitio web lo reconozca cuando usted visita.
+        p.legal__text Los sitios web pueden utilizar cookies para hacer que la experiencia del usuario sea más eficiente. Nuestro sitio utiliza diferentes tipos de cookies. Algunas cookies son colocadas por servicios de terceros que aparecen en nuestras páginas. Usamos cookies para personalizar el contenido, proporcionar funciones de redes sociales y analizar nuestro tráfico. Esto mejora su experiencia cuando navega por nuestro sitio y nos permite mejorar el servicio que brindamos. Al continuar navegando en nuestro sitio, usted acepta nuestro uso de cookies.
+        p.legal__text También compartimos información sobre su uso de nuestro sitio con nuestros socios de análisis y redes sociales que pueden combinarla con otra información que les haya proporcionado o que hayan recopilado de su uso de sus servicios.
+      section.legal__section
+        h2.legal__title Google Analytics
+        p.legal__text Este sitio web también utiliza Google Analytics, un servicio  web de análisis que provee Google Inc. ("Google"). Google Inc.  es una empresa del holding Alphabet Inc., domiciliada en EE. UU. La información generada por la cookie sobre su uso de los sitios web (incluida su dirección IP) será transmitida y almacenada por Google en servidores en los Estados Unidos. Google utilizará esta información con el fin de evaluar su uso del sitio web, compilar informes sobre la actividad de los sitios web y proporcionar otros servicios relacionados con la actividad de los sitios web y el uso de Internet. Google también puede transferir esta información a terceros si así lo exige la ley o si terceros procesan estos datos en nombre de Google.
+        p.legal__text Podemos compartir la información obtenida de Google Analytics con socios comerciales que estén interesados ​​en publicitar en nuestro sitio web. La información compartida con estos socios comerciales no contendrá ninguna información de identificación personal (Google no nos proporciona acceso directo a los datos y, por lo tanto, no podemos ver esta información).
+      section.legal__section
+        h2.legal__title Seguridad de Datos
+        p.legal__text Utilizamos las medidas de seguridad técnicas y organizativas adecuadas para proteger sus datos personales almacenados contra la manipulación, la pérdida parcial o total y el acceso no autorizado por parte de terceros. Nuestras medidas de seguridad se mejoran continuamente de acuerdo con los desarrollos técnicos.
+        p.legal__text Tenga en cuenta que cualquier transmisión de datos en Internet (por ejemplo, la comunicación por correo electrónico) generalmente no es segura y no aceptamos ninguna responsabilidad por los datos que se nos transmiten a través de Internet. Desafortunadamente, la protección absoluta no es técnicamente posible.
+        p.legal__text Esta información no se aplica a los sitios web de terceros y los enlaces correspondientes que figuran en nuestros sitios web. #[strong Selectoral.com] no asume responsabilidad alguna por estos.
+      section.legal__section
+        h2.legal__title Actualizaciones de nuestra Aviso de Privacidad
+        p.legal__text #[strong Selectoral.com] puede actualizar esta Aviso de Privacidad de vez en cuando e informarle en los sitios web que la política ha sido modificada. Se aplica la versión actual de la Aviso de Privacidad, tal como se publicó en nuestro sitio web. Con cada actualización de nuestras políticas, notaremos qué secciones se han actualizado.

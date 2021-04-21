@@ -1,0 +1,51 @@
+/* ********** Legal ********** */
+.legal {
+  padding: 5rem 0;
+
+  @include mq(l) { padding: 10rem 0; }
+
+  // .legal__container
+  &__container {
+    width: 90%;
+    text-align: justify;
+    font-size: 1.8rem;
+  }
+
+  // .legal__section
+  &__section {
+    margin-bottom: 4rem;
+    &:last-child { margin-bottom: 0; }
+
+    @include mq(m) { margin-bottom: 6rem; }
+  }
+
+  // .legal__title
+  &__title {
+    font-size: 3rem;
+    font-weight: bolder;
+    line-height: 4rem;
+    margin-bottom: 3rem;
+
+    @include mq(l) { font-size: 3.5rem; }
+  }
+
+  // .legal__text
+  &__text {
+    margin-bottom: 2rem;
+
+    &:last-child { margin-bottom: 0; }
+
+    strong { color: var(--primary-color); font-weight: bolder; }
+  }
+
+  // .legal__bullets
+  &__bullets {
+    list-style: disc;
+    margin-left: 2rem;
+  }
+
+  // .legal__point
+  &__point {
+    margin-bottom: 2rem;
+  }
+}

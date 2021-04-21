@@ -71,7 +71,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './src/pug/pages/privacy.pug',
-      filename: 'politica-de-privacidad.html'
+      filename: 'aviso-de-privacidad.html'
     }),
     new MiniCssExtractPlugin({
       filename: './assets/css/main.css'
