@@ -48,4 +48,11 @@
   &__point {
     margin-bottom: 2rem;
   }
+
+  // .legal__link
+  &__link {
+    color: var(--primary-color);
+    font-weight: bolder;
+    cursor: pointer;
+  }
 }

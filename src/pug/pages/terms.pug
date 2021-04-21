@@ -6,3 +6,39 @@ append variables
   - ogImage         = 'https://selectoral.com/assets/images/selectoral.jpg'
 
 block body
+  //- Banner Section
+  include ../includes/banner.pug
+
+  //- Termns Section
+  main.legal
+    .legal__container.l-container
+      .legal__section
+        p.legal__text Al acceder al sitio web #[strong www.selectoral.com], usted acepta estar sujeto a estos términos y condiciones, todas las leyes y regulaciones aplicables, y acepta que es responsable del cumplimiento de las leyes locales aplicables. Si no está de acuerdo con alguno de estos términos, tiene prohibido usar o acceder a este sitio. Los materiales contenidos en este sitio web están protegidos por las leyes de derechos de autor y marcas registradas aplicables.
+        p.legal__text Lea atentamente los Términos y Condiciones antes de comenzar a utilizar el sitio web. Al utilizar el sitio web o al hacer clic para aceptar los términos y condiciones cuando esta opción esté disponible para usted, usted acepta y acepta estar obligado y cumplir con estos Términos de uso además de
+        ul.legal__bullets
+          li.legal__point nuestro #[a(class="legal__link", href="/aviso-de-privacidad.html")  Aviso de Privacidad], incorporado aquí como referencia.
+        p.legal__text Si no acepta estos Términos y Condiciones o el Aviso de Privacidad, no debe acceder ni utilizar este sitio web.
+      section.legal__section
+        h2.legal__title Uso de la Licencia
+        p.legal__text Estos Términos y Condiciones le permiten utilizar el sitio web únicamente para su uso personal y no comercial. No podrá:
+        ul.legal__bullets
+          li.legal__point modificar o copiar los materiales que se utilizan en el sitio web;
+          li.legal__point utilizar los materiales para cualquier propósito comercial o para cualquier exhibición pública (comercial o no comercial);
+          li.legal__point eliminar los derechos de autor u otras anotaciones de propiedad de los materiales;
+        p.legal__text Esta licencia terminará automáticamente si viola cualquiera de estas restricciones y puede ser cancelada por #[strong Selectoral.com] en cualquier momento. Tras la terminación de esta licencia, debe destruir cualquier material que esté en su poder, ya sea en formato electrónico o impreso.
+      section.legal__section
+        h2.legal__title Descargo de Responsabilidad
+        p.legal__text Los materiales del sitio web #[strong www.selectoral.com] se proporcionan "tal cual". #[strong Selectoral.com] no ofrece garantías, expresas o implícitas, y por la presente renuncia y niega todas las demás garantías, incluidas, entre otras, las garantías implícitas o las condiciones de comerciabilidad, idoneidad para un propósito particular o no infracción de la propiedad intelectual u otra violación de derechos. #[strong Selectoral.com] no garantiza ni hace ninguna declaración con respecto a la precisión, los resultados probables o la confiabilidad del uso de los materiales en su sitio web o relacionados con dichos materiales o en cualquier sitio vinculado a este sitio.
+      section.legal__section
+        h2.legal__title Derechos de Propiedad Intelectual
+        p.legal__text El sitio web y todo su contenido, características y funcionalidad (que incluyen, entre otros, toda la información, software, texto, pantallas, imágenes, video y audio, y el diseño, selección y disposición de los mismos), son propiedad de #[strong Selectoral.com], sus licenciantes o otros proveedores de dicho material y están protegidos por derechos de autor, marcas registradas, patentes, secretos comerciales y otras leyes de propiedad intelectual o derechos de propiedad.
+        p.legal__text A menos que se indique lo contrario: (a) todo el material, datos e información en el sitio web, como archivos de datos, texto, música, archivos de audio u otros sonidos, fotografías, videos u otras imágenes, pero excluyendo cualquier software o código de computadora (colectivamente , el "Contenido que no es de código") tiene la licencia Creative Commons Attribution 4.0 International License; y (b) todo el software o código de computadora (colectivamente, el "Contenido del Código") tiene licencia de Software Comercial.
+      section.legal__section
+        h2.legal__title Cambios en el Sitio Web
+        p.legal__text Podemos actualizar el contenido de estos sitios web de vez en cuando, pero su contenido no es necesariamente completo o actualizado. Cualquiera de los materiales de los sitios web puede estar desactualizado en un momento dado, y no tenemos la obligación de actualizar dicho material.
+      section.legal__section
+        h2.legal__title Información sobre usted y sus visitas al Sitio Web
+        p.legal__text Toda la información que recopilamos en este sitio web está sujeta a nuestro #[a(class="legal__link", href="/aviso-de-privacidad.html")  Aviso de Privacidad]. Al utilizar el sitio web, usted acepta todas las acciones que tomemos con respecto a su información de conformidad con la Política de Privacidad.
+      section.legal__section
+        h2.legal__title Enlaces desde el Sitio Web
+        p.legal__text Si el sitio web contienen enlaces a otros sitios y recursos proporcionados por terceros, estos enlaces se proporcionan solo para su conveniencia. Esto incluye enlaces contenidos en anuncios, incluidos anuncios publicitarios y enlaces patrocinados. No tenemos control sobre el contenido de esos sitios o recursos, y no aceptamos responsabilidad por ellos o por cualquier pérdida o daño que pueda surgir por su uso de ellos. Si decide acceder a cualquiera de los sitios web de terceros vinculados a este sitio web, lo hace bajo su propio riesgo y sujeto a los términos y condiciones de uso de dichos sitios web. Nos reservamos el derecho de retirar el permiso de vinculación sin previo aviso.
