@@ -1,6 +1,6 @@
 {
   "name": "selectoral-landingpage",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Selectoral.com is a profit software to help electoral campaigns.",
   "main": "index.js",
   "scripts": {
