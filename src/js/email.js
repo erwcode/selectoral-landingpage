@@ -17,8 +17,8 @@ export const emailSystem = () => {
           return response.text();
       }).then(function (text) {
           console.log(text);
-          window.open('https://selectoral.com/demo', '_blank')
-          location.reload();
+          $SYSTEM_FORM.reset()
+          window.location = 'https://selectoral.com/gracias.html'
       }).catch(function (error) {
           console.error(error);
       });
